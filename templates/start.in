@@ -1,0 +1,4 @@
+#!/bin/bash
+INSTANCE=${buildout:directory}/bin/instance
+BUILDOUT=${buildout:directory}/bin/buildout
+$INSTANCE -OPlone run tryplone.py && $INSTANCE console || $BUILDOUT install demosite 
