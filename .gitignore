@@ -11,7 +11,7 @@
 .*.cfg
 .DS_Store
 .idea
-/bin/
+#/bin/
 /build/
 /develop-eggs/
 /dist/
