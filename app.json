@@ -8,8 +8,8 @@
   "env": {
       "BUILDPACK_URL": "https://github.com/webflowmeetplone/webflowmeetplone",
       "ADMIN_PASSWORD": { 
-                     "description" : "The password for the 'admin' user, make sure to make a note of it.",
-                     "generator" : "secret"
+                     "description" : "The password for the 'admin' user, change it and make a note of it.",
+                     "value" : "changeme"
                      }
   },
   "addons": [
