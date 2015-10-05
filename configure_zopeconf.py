@@ -13,7 +13,6 @@ with open(zope_conf_new, 'wt') as fout:
             fout.write(
                 line.
                 replace('address 8080', 'address {}'.format(os.environ['PORT'])).
-                replace('admin:admin', 'admin:{}'.format(os.environ['ADMIN_PASSWORD'])).
                 replace('PG_HOST', os.environ['DATABASE_URL'].split('@')[1].split(':')[0]).
                 replace('PG_DBNAME', os.environ['DATABASE_URL'].split('/')[-1]).
                 replace('PG_USER', os.environ['DATABASE_URL'].split('//')[1].split(':')[0]).
