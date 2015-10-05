@@ -6,7 +6,8 @@
   "keywords": ["plone", "python", "cms"],
   "website": "http://plone.org",
   "env": {
-      "BUILDPACK_URL": "https://github.com/webflowmeetplone/webflowmeetplone"
+      "BUILDPACK_URL": "https://github.com/webflowmeetplone/webflowmeetplone",
+      "ADMIN_PASSWORD": "changethis"
   },
   "addons": [
     "heroku-postgresql:hobby-dev",
